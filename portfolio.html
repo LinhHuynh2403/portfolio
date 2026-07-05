@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jordan Lee — Software Engineer</title>
+<meta name="description" content="Portfolio of Jordan Lee, new-grad software engineer. Skills, projects, and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css"/> 
+
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="nav-name" href="#top">Linh Huynh</a>
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap">
+    <span class="status">Open to new-grad SWE &amp; AI roles · Willing to relocate</span>
+    <h1>I build software that is <em>fast, tested, convenient</em> and shipped.</h1>
+    <p class="hero-sub">
+      B.S. in Computer Science, University of California, Davis, Class of 2026. I care about
+      clean abstractions, measurable performance, and code that other people enjoy
+      maintaining.
+    </p>
+    <div class="hero-actions">
+      <a class="btn solid" href="#projects">See my work</a>
+      <a class="btn ghost" href="Linh_Huynh_Resume_2026.docx">Download résumé</a>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Skills &amp; tech stack</h2>
+      <button class="clear-filter" id="clearFilter">✕ clear filter</button>
+    </div>
+    <p class="matrix-hint">Every skill is backed by real work — click one to see the projects that prove it.</p>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skills">
+          <button class="skill" data-skill="Python">Python</button>
+          <button class="skill" data-skill="TypeScript/JS">TypeScript/JS</button>
+          <button class="skill" data-skill="Java">Java</button>
+          <button class="skill" data-skill="C++">C++</button>
+          <button class="skill" data-skill="SQL">SQL</button>
+          <button class="skill" data-skill="Swift">Swift</button>
+        </div>
+        <h3>AI &amp; ML</h3>
+        <div class="skills">
+          <button class="skill" data-skill="LLM evaluation">LLM evaluation</button>
+          <button class="skill" data-skill="RAG pipelines">RAG pipelines</button>
+          <button class="skill" data-skill="Prompt engineering">Prompt engineering</button>
+          <button class="skill" data-skill="PyTorch">PyTorch</button>
+          <button class="skill" data-skill="TensorFlow">TensorFlow</button>
+          <button class="skill" data-skill="Computer vision">Computer vision</button>
+          <button class="skill" data-skill="Ollama">Ollama</button>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="skills">
+          <button class="skill" data-skill="HTML/CSS">HTML/CSS</button>
+          <button class="skill" data-skill="React">React</button>
+          <button class="skill" data-skill="Tailwind CSS">Tailwind CSS</button>
+          <button class="skill" data-skill="SwiftUI">SwiftUI</button>
+          <button class="skill" data-skill="Streamlit">Streamlit</button>
+        </div>
+        <h3>Backend &amp; data</h3>
+        <div class="skills">
+          <button class="skill" data-skill="FastAPI">FastAPI</button>
+          <button class="skill" data-skill="Node.js">Node.js</button>
+          <button class="skill" data-skill="PostgreSQL">PostgreSQL</button>
+          <button class="skill" data-skill="Supabase">Supabase</button>
+          <button class="skill" data-skill="Firebase">Firebase</button>
+          <button class="skill" data-skill="Vercel">Vercel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Projects</h2>
+      <span class="sec-note" id="projNote">6 projects</span>
+    </div>
+
+    <div class="projects" id="projectList">
+
+      <!-- TIP: point each GitHub link at the exact repo, e.g. https://github.com/LinhHuynh2403/repo-name -->
+
+      <article class="project" data-skills="Python,TypeScript/JS,React,FastAPI,LLM evaluation,RAG pipelines">
+        <div>
+          <h3>AI Log Observability Platform</h3>
+          <div class="when">June 2025 – present</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/loginsight-ai">GitHub</a>
+        </div>
+        <p>
+          An AI-driven log observability platform built with React and FastAPI that
+          extracts root-cause analyses from streaming logs using LLM embeddings.
+          Backend ingestion is optimized for streaming inputs with time-series
+          aggregation to track error velocity, and an interactive slideshow-style data
+          view with dynamic Recharts visualizations lets users trace system failure
+          timelines.
+        </p>
+        <div class="impact">Reduces mock debugging triage time with automated LLM root-cause analysis.</div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LLM Embeddings</span>
+          <span class="tag">Recharts</span><span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="project" data-skills="TypeScript/JS,React,Node.js,PostgreSQL,Supabase,Ollama,Prompt engineering,Vercel,SQL">
+        <div>
+          <h3>JourZy — AI travel planner</h3>
+          <div class="when">February 2026 - present</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/travel-planner">GitHub</a>
+        </div>
+        <p>
+          A full-stack AI travel planning app deployed on Vercel. A Node.js/Express
+          backend with Supabase orchestrates parallel pipelines across Gemini and local
+          Ollama (Qwen) models, with carefully designed prompts enforcing strict JSON
+          output for deterministic parsing. PostgreSQL schemas persist chat sessions and
+          build long-term traveler preference profiles, while Google Maps, Distance
+          Matrix, and OpenWeather APIs power real-time transit and weather inside an
+          interactive map.
+        </p>
+        <div class="impact">Context-aware itineraries with cross-session personalization across two LLM providers.</div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Supabase</span>
+          <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span class="tag">Ollama</span><span class="tag">Vercel</span>
+        </div>
+      </article>
+
+      <article class="project" data-skills="TypeScript/JS,React,Tailwind CSS">
+        <div>
+          <h3>Fixity — maintenance dashboard</h3>
+          <div class="when">February 2026 · SacHackVII</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/SacHack26-">GitHub</a>
+        </div>
+        <p>
+          The React and Tailwind CSS frontend for Fixity: responsive interfaces for
+          maintenance ticket prioritization, repair workflows, and technician
+          dashboards, integrated with backend APIs for chatbot support and real-time
+          data-driven updates between AI services and the UI.
+        </p>
+        <div class="impact">Real-time, AI-connected dashboards for ticket triage and repair workflows.</div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">REST APIs</span>
+        </div>
+      </article>
+
+      <article class="project" data-skills="Python,PyTorch,TensorFlow,Streamlit,Computer vision">
+        <div>
+          <h3>MRI Alzheimer's Detection</h3>
+          <div class="when">October – November 2025</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/ResNet50-LogisticRegression-Dementia-Classification">GitHub</a>
+        </div>
+        <p>
+          A deep learning pipeline (3D CNN, VGG16, Random Forest) that predicts amyloid
+          PET positivity from MRI features — a cost-effective alternative to expensive
+          PET scans for Alzheimer's screening. Includes full MRI pre-processing (skull
+          stripping, normalization) and model validation with AUC, ROC, and Pearson
+          correlation, delivered end-to-end with a Streamlit interface for real-time
+          MRI-to-PET prediction.
+        </p>
+        <div class="impact">Clinically-validated screening pipeline from raw MRI to real-time prediction.</div>
+        <div class="tags">
+          <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">3D CNN</span>
+          <span class="tag">Streamlit</span><span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="project" data-skills="Python,PyTorch,Computer vision">
+        <div>
+          <h3>Trash Sorting AI</h3>
+          <div class="when">October – November 2025</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/Trash-Detector-AI">GitHub</a>
+        </div>
+        <p>
+          A computer vision model using transfer learning on ResNet18 to classify six
+          waste categories from images. Applied normalization and augmentation
+          preprocessing, tuned hyperparameters, and evaluated with confusion matrices
+          and loss/accuracy curves on the TrashNet dataset.
+        </p>
+        <div class="impact">93.42% test accuracy on TrashNet across six waste categories.</div>
+        <div class="tags">
+          <span class="tag">PyTorch</span><span class="tag">ResNet18</span><span class="tag">Transfer learning</span><span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="project" data-skills="Swift,SwiftUI,Firebase">
+        <div>
+          <h3>SHIPSmart — AI healthcare assistant</h3>
+          <div class="when">April 2025 · HackDavis25</div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/LinhHuynh2403/SHIPSmart">GitHub</a>
+        </div>
+        <p>
+          An AI-powered iOS app that helps UC students estimate UC SHIP insurance costs,
+          identify billing errors, and automate claims processing. Built with SwiftUI
+          and OpenAI, with Firebase authentication, an AI chatbot, and provider-matching
+          features — led deployment at HackDavis and resolved API integration bugs under
+          hackathon pressure.
+        </p>
+        <div class="impact">Shipped a working AI healthcare assistant at HackDavis.</div>
+        <div class="tags">
+          <span class="tag">SwiftUI</span><span class="tag">OpenAI</span><span class="tag">Firebase</span><span class="tag">iOS</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><h2>Experience &amp; education</h2></div>
+    <div class="xp">
+      <div class="xp-item">
+        <div class="xp-when">Jun – Sep 2025</div>
+        <div>
+          <h3>AI Intern · <span class="org">Helix International</span></h3>
+          <ul>
+            <li>Designed and executed an LLM evaluation methodology across 5+ models
+            using LLMPerf, improving RAG answer accuracy by 15% and SQL query precision
+            through systematic prompt engineering.</li>
+            <li>Optimized GenAI inference pipelines with Ollama — profiled bottlenecks
+            across model loading, tokenization, and output streaming to cut end-to-end
+            latency by 30%.</li>
+            <li>Automated evaluation workflows and wrote API integration guides
+            covering architecture, LLM deployment patterns, and production integration
+            protocols.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-when">Jan – Jun 2025</div>
+        <div>
+          <h3>CS Tutor · <span class="org">UC Davis</span></h3>
+          <p>Tutored 10+ students weekly in data structures, algorithms, and
+          object-oriented programming through debugging support and personalized
+          guidance.</p>
+        </div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-when">Graduated Jun 2026</div>
+        <div>
+          <h3>B.S. Computer Science · <span class="org">University of California, Davis</span></h3>
+          <p>Coursework: Data Structures &amp; Algorithms, Algorithm Design &amp;
+          Analysis, Computer Architecture, Machine Learning, Computer Vision, Operating
+          Systems &amp; System Programming.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Hiring for a new-grad SWE or AI role? <em>Let's talk.</em></h2>
+    <div class="contact-links">
+      <a href="mailto:vanlinhtpnt@gmail.com">vanlinhtpnt@gmail.com</a>
+      <a href="tel:+14086905492">(408) 690-5492</a>
+      <a href="https://github.com/LinhHuynh2403">github.com/LinhHuynh2403</a>
+      <a href="https://www.linkedin.com/in/linh-huynh-hnvl/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">© 2026 Linh Huynh · Built by hand, no template.</div>
+</footer>
+<script>
+(function(){
+  var skills = document.querySelectorAll('.skill');
+  var projects = document.querySelectorAll('.project');
+  var clearBtn = document.getElementById('clearFilter');
+  var note = document.getElementById('projNote');
+  var total = projects.length;
+  var active = null;
+
+  // show project counts on each skill chip
+  skills.forEach(function(chip){
+    var name = chip.dataset.skill;
+    var n = 0;
+    projects.forEach(function(p){
+      if (p.dataset.skills.split(',').indexOf(name) !== -1) n++;
+    });
+    if (n > 0) {
+      var c = document.createElement('span');
+      c.className = 'count';
+      c.textContent = '×' + n;
+      chip.appendChild(c);
+    }
+    chip.setAttribute('aria-pressed','false');
+  });
+ 
+  function applyFilter(name){
+    active = name;
+    var hits = 0;
+    skills.forEach(function(chip){
+      chip.setAttribute('aria-pressed', chip.dataset.skill === name ? 'true' : 'false');
+    });
+    projects.forEach(function(p){
+      var list = p.dataset.skills.split(',');
+      var match = !name || list.indexOf(name) !== -1;
+      p.classList.toggle('dim', !!name && !match);
+      p.classList.toggle('hit', !!name && match);
+      if (match) hits++;
+      p.querySelectorAll('.tag').forEach(function(t){
+        t.classList.toggle('match', !!name && t.textContent === name);
+      });
+    });
+    clearBtn.classList.toggle('show', !!name);
+    note.textContent = name ? hits + ' of ' + total + ' projects use ' + name
+                            : total + ' projects';
+    if (name) {
+      document.getElementById('projects').scrollIntoView({behavior:'smooth', block:'nearest'});
+    }
+  }
+
+  skills.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      applyFilter(active === chip.dataset.skill ? null : chip.dataset.skill);
+    });
+  });
+  clearBtn.addEventListener('click', function(){ applyFilter(null); });
+})();
+</script>
+
+</body>
+</html> 
