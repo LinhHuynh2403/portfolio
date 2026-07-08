@@ -32,7 +32,7 @@
   <header id="top">
     <div class="wrap">
       <div class="hero-top">
-        <img src="logo/profile_pic.jpeg" alt="Linh Huynh" class="profile-img">
+        <img src="logo/profile_pic.jpeg" alt="Linh Huynh" class="profile-img" id="profileImg">
       </div>
       <span class="status">Open to new-grad SWE &amp; AI roles · Willing to relocate</span>
       <h1>I build software that is <em>fast, tested, convenient</em> and shipped.</h1>
@@ -359,6 +359,13 @@
     <footer class="reveal">
       <div class="wrap">© 2026 Linh Huynh · Built by hand, no template.</div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="zoomedImg">
+    </div>
+
     <script>
       (function () {
         var skills = document.querySelectorAll('.skill');
@@ -415,6 +422,29 @@
         });
         clearBtn.addEventListener('click', function () { applyFilter(null); });
       })();
+
+      // Image Zoom Modal
+      const modal = document.getElementById("imageModal");
+      const img = document.getElementById("profileImg");
+      const modalImg = document.getElementById("zoomedImg");
+      const span = document.getElementsByClassName("close-modal")[0];
+
+      if (img && modal && modalImg) {
+        img.onclick = function() {
+          modal.style.display = "flex";
+          modalImg.src = this.src;
+        }
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        modal.onclick = function(e) {
+          if (e.target !== modalImg) {
+            modal.style.display = "none";
+          }
+        }
+      }
 
       const cursorGlow = document.querySelector('.cursor-glow');
 
