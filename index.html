@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
@@ -43,7 +43,7 @@
       </p>
       <div class="hero-actions">
         <a class="btn solid" href="#projects">See my work</a>
-        <a class="btn ghost" href="Linh_Huynh_Resume_2026.docx">Download résumé</a>
+        <a class="btn ghost" href="Linh_Huynh_resume_updated(1).pdf">Download résumé</a>
       </div>
     </div>
   </header>
@@ -423,23 +423,23 @@
         clearBtn.addEventListener('click', function () { applyFilter(null); });
       })();
 
-      // Image Zoom Modal
+      // Profile Picture Interactions
       const modal = document.getElementById("imageModal");
       const img = document.getElementById("profileImg");
       const modalImg = document.getElementById("zoomedImg");
       const span = document.getElementsByClassName("close-modal")[0];
 
       if (img && modal && modalImg) {
-        img.onclick = function() {
+        img.onclick = function () {
           modal.style.display = "flex";
           modalImg.src = this.src;
         }
 
-        span.onclick = function() {
+        span.onclick = function () {
           modal.style.display = "none";
         }
 
-        modal.onclick = function(e) {
+        modal.onclick = function (e) {
           if (e.target !== modalImg) {
             modal.style.display = "none";
           }
