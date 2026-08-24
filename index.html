@@ -10,10 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-
 </head>
 
 <body>
@@ -21,6 +20,7 @@
     <div class="wrap nav-inner">
       <a class="nav-name" href="#top">Linh Huynh</a>
       <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -30,31 +30,64 @@
   </nav>
 
   <header id="top">
-    <div class="wrap">
-      <div class="hero-top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="status">N&deg;01 &middot; Open to new-grad SWE &amp; AI roles</span>
+        <h1>I build software that is <em>fast, tested, convenient</em> and shipped.</h1>
+        <p class="hero-sub">
+          B.S. in Computer Science, University of California, Davis, Class of 2026. I care about
+          clean abstractions, measurable performance, and code that other people enjoy
+          maintaining.
+        </p>
+        <div class="hero-actions">
+          <a class="btn solid" href="#projects">See my work</a>
+          <a class="btn ghost" href="Linh-Huynh-Resume.pdf">Download r&eacute;sum&eacute;</a>
+        </div>
+      </div>
+      <figure class="hero-portrait">
         <img src="logo/profile_pic.jpeg" alt="Linh Huynh" class="profile-img" id="profileImg">
-      </div>
-      <span class="status">Open to new-grad SWE &amp; AI roles · Willing to relocate</span>
-      <h1>I build software that is <em>fast, tested, convenient</em> and shipped.</h1>
-      <p class="hero-sub">
-        B.S. in Computer Science, University of California, Davis, Class of 2026. I care about
-        clean abstractions, measurable performance, and code that other people enjoy
-        maintaining.
-      </p>
-      <div class="hero-actions">
-        <a class="btn solid" href="#projects">See my work</a>
-        <a class="btn ghost" href="Linh_Huynh_resume_copy.pdf">Download résumé</a>
-      </div>
+        <figcaption>San Jose, CA &middot; Willing to relocate</figcaption>
+      </figure>
     </div>
   </header>
+
+  <section id="about" class="reveal">
+    <div class="wrap about-grid">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-body">
+        <p class="lede">
+          I'm a soon-to-graduate engineer who likes finishing things &mdash; taking a model,
+          a pipeline, or a UI from a rough idea to something a real user can trust. Most of
+          my recent work sits at the intersection of applied ML and product engineering:
+          shipping the interface, the API, and the evaluation loop that proves the AI part
+          actually works.
+        </p>
+        <p>
+          Outside of coursework I tutor data structures &amp; algorithms, build side
+          projects fast enough to demo at hackathons, and read production postmortems for
+          fun.
+        </p>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Davis, CA</dd></div>
+          <div><dt>Studying</dt><dd>B.S. Computer Science, UC Davis &rsquo;26</dd></div>
+          <div><dt>Focus</dt><dd>Full-stack &amp; applied AI/ML</dd></div>
+          <div><dt>Status</dt><dd>Open to new-grad roles</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
 
   <section id="skills" class="reveal">
     <div class="wrap">
       <div class="sec-head">
+        <span class="sec-num">02</span>
         <h2>Skills &amp; tech stack</h2>
-        <button class="clear-filter" id="clearFilter">✕ clear filter</button>
+        <button class="clear-filter" id="clearFilter">&#215; clear filter</button>
       </div>
-      <p class="matrix-hint">Every skill is backed by real work — click one to see the projects that prove it.</p>
+      <p class="matrix-hint">Every skill is backed by real work &mdash; click one to see the projects that prove it.</p>
       <div class="skill-groups">
         <div class="skill-group">
           <h3>Languages</h3>
@@ -103,6 +136,7 @@
   <section id="projects" class="reveal">
     <div class="wrap">
       <div class="sec-head">
+        <span class="sec-num">03</span>
         <h2>Projects</h2>
         <span class="sec-note" id="projNote">6 projects</span>
       </div>
@@ -112,168 +146,186 @@
         <!-- TIP: point each GitHub link at the exact repo, e.g. https://github.com/LinhHuynh2403/repo-name -->
 
         <article class="project" data-skills="Python,TypeScript/JS,React,FastAPI,LLM evaluation,RAG pipelines">
-          <div>
-            <h3>AI Log Observability Platform</h3>
-            <div class="when">June 2025 – present</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/loginsight-ai"><svg class="gh-icon" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            An AI-driven log observability platform built with React and FastAPI that
-            extracts root-cause analyses from streaming logs using LLM embeddings.
-            Backend ingestion is optimized for streaming inputs with time-series
-            aggregation to track error velocity, and an interactive slideshow-style data
-            view with dynamic Recharts visualizations lets users trace system failure
-            timelines.
-          </p>
-          <div class="impact">Reduces mock debugging triage time with automated LLM root-cause analysis.</div>
-          <div class="tags">
-            <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LLM Embeddings</span>
-            <span class="tag">Recharts</span><span class="tag">Python</span>
+          <span class="project-index">01</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>AI Log Observability Platform</h3>
+              <div class="links">
+                <span class="when">June 2025 &ndash; present</span>
+                <a href="https://github.com/LinhHuynh2403/loginsight-ai"><svg class="gh-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              An AI-driven log observability platform built with React and FastAPI that
+              extracts root-cause analyses from streaming logs using LLM embeddings.
+              Backend ingestion is optimized for streaming inputs with time-series
+              aggregation to track error velocity, and an interactive slideshow-style data
+              view with dynamic Recharts visualizations lets users trace system failure
+              timelines.
+            </p>
+            <div class="impact">Reduces mock debugging triage time with automated LLM root-cause analysis.</div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LLM Embeddings</span>
+              <span class="tag">Recharts</span><span class="tag">Python</span>
+            </div>
           </div>
         </article>
 
         <article class="project"
           data-skills="TypeScript/JS,React,Node.js,PostgreSQL,Supabase,Ollama,Prompt engineering,Vercel,SQL">
-          <div>
-            <h3>JourZy — AI travel planner</h3>
-            <div class="when">February 2026 - present</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/travel-planner"><svg class="gh-icon" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            A full-stack AI travel planning app deployed on Vercel. A Node.js/Express
-            backend with Supabase orchestrates parallel pipelines across Gemini and local
-            Ollama (Qwen) models, with carefully designed prompts enforcing strict JSON
-            output for deterministic parsing. PostgreSQL schemas persist chat sessions and
-            build long-term traveler preference profiles, while Google Maps, Distance
-            Matrix, and OpenWeather APIs power real-time transit and weather inside an
-            interactive map.
-          </p>
-          <div class="impact">Context-aware itineraries with cross-session personalization across two LLM providers.
-          </div>
-          <div class="tags">
-            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Supabase</span>
-            <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span class="tag">Ollama</span><span
-              class="tag">Vercel</span>
+          <span class="project-index">02</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>JourZy &mdash; AI travel planner</h3>
+              <div class="links">
+                <span class="when">February 2026 - present</span>
+                <a href="https://github.com/LinhHuynh2403/travel-planner"><svg class="gh-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              A full-stack AI travel planning app deployed on Vercel. A Node.js/Express
+              backend with Supabase orchestrates parallel pipelines across Gemini and local
+              Ollama (Qwen) models, with carefully designed prompts enforcing strict JSON
+              output for deterministic parsing. PostgreSQL schemas persist chat sessions and
+              build long-term traveler preference profiles, while Google Maps, Distance
+              Matrix, and OpenWeather APIs power real-time transit and weather inside an
+              interactive map.
+            </p>
+            <div class="impact">Context-aware itineraries with cross-session personalization across two LLM
+              providers.</div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Supabase</span>
+              <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span
+                class="tag">Ollama</span><span class="tag">Vercel</span>
+            </div>
           </div>
         </article>
 
         <article class="project" data-skills="TypeScript/JS,React,Tailwind CSS">
-          <div>
-            <h3>Fixity — maintenance dashboard</h3>
-            <div class="when">February 2026 · SacHackVII</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/SacHack26-"><svg class="gh-icon" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            The React and Tailwind CSS frontend for Fixity: responsive interfaces for
-            maintenance ticket prioritization, repair workflows, and technician
-            dashboards, integrated with backend APIs for chatbot support and real-time
-            data-driven updates between AI services and the UI.
-          </p>
-          <div class="impact">Real-time, AI-connected dashboards for ticket triage and repair workflows.</div>
-          <div class="tags">
-            <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">REST APIs</span>
+          <span class="project-index">03</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Fixity &mdash; maintenance dashboard</h3>
+              <div class="links">
+                <span class="when">February 2026 &middot; SacHackVII</span>
+                <a href="https://github.com/LinhHuynh2403/SacHack26-"><svg class="gh-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              The React and Tailwind CSS frontend for Fixity: responsive interfaces for
+              maintenance ticket prioritization, repair workflows, and technician
+              dashboards, integrated with backend APIs for chatbot support and real-time
+              data-driven updates between AI services and the UI.
+            </p>
+            <div class="impact">Real-time, AI-connected dashboards for ticket triage and repair workflows.</div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">REST APIs</span>
+            </div>
           </div>
         </article>
 
         <article class="project" data-skills="Python,PyTorch,TensorFlow,Streamlit,Computer vision">
-          <div>
-            <h3>MRI Alzheimer's Detection</h3>
-            <div class="when">October – November 2025</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/ResNet50-LogisticRegression-Dementia-Classification"><svg
-                class="gh-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            A deep learning pipeline (3D CNN, VGG16, Random Forest) that predicts amyloid
-            PET positivity from MRI features — a cost-effective alternative to expensive
-            PET scans for Alzheimer's screening. Includes full MRI pre-processing (skull
-            stripping, normalization) and model validation with AUC, ROC, and Pearson
-            correlation, delivered end-to-end with a Streamlit interface for real-time
-            MRI-to-PET prediction.
-          </p>
-          <div class="impact">Clinically-validated screening pipeline from raw MRI to real-time prediction.</div>
-          <div class="tags">
-            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">3D CNN</span>
-            <span class="tag">Streamlit</span><span class="tag">Python</span>
+          <span class="project-index">04</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>MRI Alzheimer&rsquo;s Detection</h3>
+              <div class="links">
+                <span class="when">October &ndash; November 2025</span>
+                <a href="https://github.com/LinhHuynh2403/ResNet50-LogisticRegression-Dementia-Classification"><svg
+                    class="gh-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              A deep learning pipeline (3D CNN, VGG16, Random Forest) that predicts amyloid
+              PET positivity from MRI features &mdash; a cost-effective alternative to expensive
+              PET scans for Alzheimer&rsquo;s screening. Includes full MRI pre-processing (skull
+              stripping, normalization) and model validation with AUC, ROC, and Pearson
+              correlation, delivered end-to-end with a Streamlit interface for real-time
+              MRI-to-PET prediction.
+            </p>
+            <div class="impact">Clinically-validated screening pipeline from raw MRI to real-time prediction.</div>
+            <div class="tags">
+              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">3D CNN</span>
+              <span class="tag">Streamlit</span><span class="tag">Python</span>
+            </div>
           </div>
         </article>
 
         <article class="project" data-skills="Python,PyTorch,Computer vision">
-          <div>
-            <h3>Trash Sorting AI</h3>
-            <div class="when">October – November 2025</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/Trash-Detector-AI"><svg class="gh-icon" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            A computer vision model using transfer learning on ResNet18 to classify six
-            waste categories from images. Applied normalization and augmentation
-            preprocessing, tuned hyperparameters, and evaluated with confusion matrices
-            and loss/accuracy curves on the TrashNet dataset.
-          </p>
-          <div class="impact">93.42% test accuracy on TrashNet across six waste categories.</div>
-          <div class="tags">
-            <span class="tag">PyTorch</span><span class="tag">ResNet18</span><span class="tag">Transfer
-              learning</span><span class="tag">Python</span>
+          <span class="project-index">05</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Trash Sorting AI</h3>
+              <div class="links">
+                <span class="when">October &ndash; November 2025</span>
+                <a href="https://github.com/LinhHuynh2403/Trash-Detector-AI"><svg class="gh-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              A computer vision model using transfer learning on ResNet18 to classify six
+              waste categories from images. Applied normalization and augmentation
+              preprocessing, tuned hyperparameters, and evaluated with confusion matrices
+              and loss/accuracy curves on the TrashNet dataset.
+            </p>
+            <div class="impact">93.42% test accuracy on TrashNet across six waste categories.</div>
+            <div class="tags">
+              <span class="tag">PyTorch</span><span class="tag">ResNet18</span><span class="tag">Transfer
+                learning</span><span class="tag">Python</span>
+            </div>
           </div>
         </article>
 
         <article class="project" data-skills="Swift,SwiftUI,Firebase">
-          <div>
-            <h3>SHIPSmart — AI healthcare assistant</h3>
-            <div class="when">April 2025 · HackDavis25</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/LinhHuynh2403/SHIPSmart"><svg class="gh-icon" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor" />
-              </svg>GitHub</a>
-          </div>
-          <p>
-            An AI-powered iOS app that helps UC students estimate UC SHIP insurance costs,
-            identify billing errors, and automate claims processing. Built with SwiftUI
-            and OpenAI, with Firebase authentication, an AI chatbot, and provider-matching
-            features — led deployment at HackDavis and resolved API integration bugs under
-            hackathon pressure.
-          </p>
-          <div class="impact">Shipped a working AI healthcare assistant at HackDavis.</div>
-          <div class="tags">
-            <span class="tag">SwiftUI</span><span class="tag">OpenAI</span><span class="tag">Firebase</span><span
-              class="tag">iOS</span>
+          <span class="project-index">06</span>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>SHIPSmart &mdash; AI healthcare assistant</h3>
+              <div class="links">
+                <span class="when">April 2025 &middot; HackDavis25</span>
+                <a href="https://github.com/LinhHuynh2403/SHIPSmart"><svg class="gh-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      fill="currentColor" />
+                  </svg>GitHub</a>
+              </div>
+            </div>
+            <p>
+              An AI-powered iOS app that helps UC students estimate UC SHIP insurance costs,
+              identify billing errors, and automate claims processing. Built with SwiftUI
+              and OpenAI, with Firebase authentication, an AI chatbot, and provider-matching
+              features &mdash; led deployment at HackDavis and resolved API integration bugs under
+              hackathon pressure.
+            </p>
+            <div class="impact">Shipped a working AI healthcare assistant at HackDavis.</div>
+            <div class="tags">
+              <span class="tag">SwiftUI</span><span class="tag">OpenAI</span><span class="tag">Firebase</span><span
+                class="tag">iOS</span>
+            </div>
           </div>
         </article>
 
@@ -284,6 +336,7 @@
   <section id="experience" class="reveal">
     <div class="wrap">
       <div class="sec-head">
+        <span class="sec-num">04</span>
         <h2>Experience &amp; Education</h2>
       </div>
       <div class="xp">
@@ -292,21 +345,21 @@
                 alt="UC Davis logo" class="org-logo"></div>
           </div>
           <div>
-            <h3>B.S. Computer Science · <span class="org">University of California, Davis</span></h3>
+            <h3>B.S. Computer Science &middot; <span class="org">University of California, Davis</span></h3>
             <p>Coursework: Data Structures &amp; Algorithms, Algorithm Design &amp;
               Analysis, Computer Architecture, Machine Learning, Computer Vision, Operating
               Systems &amp; System Programming.</p>
           </div>
         </div>
         <div class="xp-item">
-          <div class="xp-when">Jun – Sep 2025<div class="org-logo-frame"><img src="logo/helix_int_logo.png"
+          <div class="xp-when">Jun &ndash; Sep 2025<div class="org-logo-frame"><img src="logo/helix_int_logo.png"
                 alt="Helix International logo" class="org-logo"></div>
           </div>
           <div>
-            <h3>AI Intern · <span class="org">Helix International</span></h3>
+            <h3>AI Intern &middot; <span class="org">Helix International</span></h3>
             <ul>
-              <li>Created a system for testing 5+ AI models, boosting the accuracy of AI-generated answers and database
-                queries by 15%.</li>
+              <li>Created a system for testing 5+ AI models, boosting the accuracy of AI-generated answers and
+                database queries by 15%.</li>
               <li>Improved AI processing speeds by 30% by identifying and fixing bottlenecks in the data handling
                 process.</li>
               <li>Wrote clear technical guides for internal teams on how to connect and use our AI tools.</li>
@@ -316,11 +369,11 @@
           </div>
         </div>
         <div class="xp-item">
-          <div class="xp-when">Jan – Jun 2025<div class="org-logo-frame"><img src="logo/UCD_logo.png"
+          <div class="xp-when">Jan &ndash; Jun 2025<div class="org-logo-frame"><img src="logo/UCD_logo.png"
                 alt="UC Davis logo" class="org-logo"></div>
           </div>
           <div>
-            <h3>CS Tutor · <span class="org">UC Davis</span></h3>
+            <h3>CS Tutor &middot; <span class="org">UC Davis</span></h3>
             <p>Tutored 10+ students weekly in data structures, algorithms, and
               object-oriented programming through debugging support and personalized
               guidance.</p>
@@ -332,7 +385,8 @@
 
   <section class="contact reveal" id="contact">
     <div class="wrap">
-      <h2>Hiring for a new-grad SWE or AI role? <em>Let's talk.</em></h2>
+      <span class="sec-num center">05</span>
+      <h2>Hiring for a new-grad SWE or AI role? <em>Let&rsquo;s talk.</em></h2>
       <div class="contact-links">
         <a href="mailto:vanlinhtpnt@gmail.com"><svg class="contact-icon" viewBox="0 0 20 20" aria-hidden="true">
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" fill="currentColor" />
@@ -357,7 +411,7 @@
       </div>
     </div>
     <footer class="reveal">
-      <div class="wrap">© 2026 Linh Huynh · Built by hand, no template.</div>
+      <div class="wrap">&copy; 2026 Linh Huynh &middot; Built by hand, no template.</div>
     </footer>
 
     <!-- Image Modal -->
@@ -487,6 +541,7 @@
         });
       });
     </script>
+    <div class="cursor-glow"></div>
 
 </body>
 
