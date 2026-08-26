@@ -135,198 +135,184 @@
     <div class="wrap">
       <div class="sec-head">
         <h2>Projects</h2>
-        <span class="sec-note" id="projNote">6 projects</span>
       </div>
 
       <div class="projects" id="projectList">
 
         <!-- TIP: point each GitHub link at the exact repo, e.g. https://github.com/LinhHuynh2403/repo-name -->
 
-        <article class="project" data-skills="Python,TypeScript/JS,React,FastAPI,LLM evaluation,RAG pipelines">
-          <span class="project-index">01</span>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>AI Log Observability Platform</h3>
-              <div class="links">
-                <span class="when">June 2025 &ndash; present</span>
-                <a href="https://github.com/LinhHuynh2403/loginsight-ai"><svg class="gh-icon" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
-              </div>
-            </div>
-            <p>
-              An AI-driven log observability platform built with React and FastAPI that
-              extracts root-cause analyses from streaming logs using LLM embeddings.
-              Backend ingestion is optimized for streaming inputs with time-series
-              aggregation to track error velocity, and an interactive slideshow-style data
-              view with dynamic Recharts visualizations lets users trace system failure
-              timelines.
-            </p>
-            <div class="impact">Reduces mock debugging triage time with automated LLM root-cause analysis.</div>
-            <div class="tags">
-              <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LLM Embeddings</span>
-              <span class="tag">Recharts</span><span class="tag">Python</span>
-            </div>
-          </div>
-        </article>
-
         <article class="project"
           data-skills="TypeScript/JS,React,Node.js,PostgreSQL,Supabase,Ollama,Prompt engineering,Vercel,SQL">
+          <span class="project-index">01</span>
+          <div class="project-body">
+            <a class="project-thumb" href="https://travel-planner-ai-five-peach.vercel.app/" target="_blank"
+              rel="noopener">
+              <img src="img/jourzy-thumb.jpg" alt="JourZy destination browsing screen" loading="lazy">
+            </a>
+            <div class="project-content">
+              <div class="project-head">
+                <h3><a class="proj-title-link" href="https://travel-planner-ai-five-peach.vercel.app/"
+                    target="_blank" rel="noopener">JourZy &mdash; AI travel planner<svg class="ext-icon"
+                      viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a></h3>
+                <div class="links">
+                  <span class="when">February 2026 - present</span>
+                  <a href="https://github.com/LinhHuynh2403/travel-planner"><svg class="gh-icon" viewBox="0 0 24 24"
+                      aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
+              </div>
+              <p>
+                JourZy is an AI travel planner I built to turn a rough trip idea into a full
+                day-by-day itinerary without the back-and-forth of manual research. I built
+                the whole stack: a Node.js/Express backend that orchestrates parallel calls
+                across Gemini and a local Ollama model with prompts enforcing strict JSON
+                output, PostgreSQL/Supabase schemas that remember a traveler&rsquo;s
+                preferences across sessions, and a React frontend with an interactive map
+                pulling live transit and weather data.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Supabase</span>
+                <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span
+                  class="tag">Ollama</span><span class="tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-skills="Python,TypeScript/JS,React,FastAPI,LLM evaluation,RAG pipelines">
           <span class="project-index">02</span>
           <div class="project-body">
-            <div class="project-head">
-              <h3>JourZy &mdash; AI travel planner</h3>
-              <div class="links">
-                <span class="when">February 2026 - present</span>
-                <a href="https://github.com/LinhHuynh2403/travel-planner"><svg class="gh-icon" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
+            <a class="project-thumb" href="https://loginsight-ai-three.vercel.app/" target="_blank" rel="noopener">
+              <img src="img/loginsight-thumb.png" alt="LogInsight dashboard with error-rate chart and log stream"
+                loading="lazy">
+            </a>
+            <div class="project-content">
+              <div class="project-head">
+                <h3><a class="proj-title-link" href="https://loginsight-ai-three.vercel.app/" target="_blank"
+                    rel="noopener">LogInsight &mdash; AI log observability platform<svg class="ext-icon"
+                      viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a></h3>
+                <div class="links">
+                  <span class="when">June 2025 &ndash; present</span>
+                  <a href="https://github.com/LinhHuynh2403/loginsight-ai"><svg class="gh-icon" viewBox="0 0 24 24"
+                      aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
               </div>
-            </div>
-            <p>
-              A full-stack AI travel planning app deployed on Vercel. A Node.js/Express
-              backend with Supabase orchestrates parallel pipelines across Gemini and local
-              Ollama (Qwen) models, with carefully designed prompts enforcing strict JSON
-              output for deterministic parsing. PostgreSQL schemas persist chat sessions and
-              build long-term traveler preference profiles, while Google Maps, Distance
-              Matrix, and OpenWeather APIs power real-time transit and weather inside an
-              interactive map.
-            </p>
-            <div class="impact">Context-aware itineraries with cross-session personalization across two LLM
-              providers.</div>
-            <div class="tags">
-              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Supabase</span>
-              <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span
-                class="tag">Ollama</span><span class="tag">Vercel</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" data-skills="TypeScript/JS,React,Tailwind CSS">
-          <span class="project-index">03</span>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>Fixity &mdash; maintenance dashboard</h3>
-              <div class="links">
-                <span class="when">February 2026 &middot; SacHackVII</span>
-                <a href="https://github.com/LinhHuynh2403/SacHack26-"><svg class="gh-icon" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
+              <p>
+                LogInsight is an AI-driven observability platform I built to cut down the
+                time engineers spend digging through raw logs to find a root cause. I built
+                the FastAPI backend that ingests streaming logs, embeds them, and surfaces
+                likely root causes automatically, plus a React frontend with a
+                slideshow-style timeline view and Recharts visualizations so failures are
+                easy to trace.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LLM Embeddings</span>
+                <span class="tag">Recharts</span><span class="tag">Python</span>
               </div>
-            </div>
-            <p>
-              The React and Tailwind CSS frontend for Fixity: responsive interfaces for
-              maintenance ticket prioritization, repair workflows, and technician
-              dashboards, integrated with backend APIs for chatbot support and real-time
-              data-driven updates between AI services and the UI.
-            </p>
-            <div class="impact">Real-time, AI-connected dashboards for ticket triage and repair workflows.</div>
-            <div class="tags">
-              <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">REST APIs</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" data-skills="Python,PyTorch,TensorFlow,Streamlit,Computer vision">
-          <span class="project-index">04</span>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>MRI Alzheimer&rsquo;s Detection</h3>
-              <div class="links">
-                <span class="when">October &ndash; November 2025</span>
-                <a href="https://github.com/LinhHuynh2403/ResNet50-LogisticRegression-Dementia-Classification"><svg
-                    class="gh-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
-              </div>
-            </div>
-            <p>
-              A deep learning pipeline (3D CNN, VGG16, Random Forest) that predicts amyloid
-              PET positivity from MRI features &mdash; a cost-effective alternative to expensive
-              PET scans for Alzheimer&rsquo;s screening. Includes full MRI pre-processing (skull
-              stripping, normalization) and model validation with AUC, ROC, and Pearson
-              correlation, delivered end-to-end with a Streamlit interface for real-time
-              MRI-to-PET prediction.
-            </p>
-            <div class="impact">Clinically-validated screening pipeline from raw MRI to real-time prediction.</div>
-            <div class="tags">
-              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">3D CNN</span>
-              <span class="tag">Streamlit</span><span class="tag">Python</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" data-skills="Python,PyTorch,Computer vision">
-          <span class="project-index">05</span>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>Trash Sorting AI</h3>
-              <div class="links">
-                <span class="when">October &ndash; November 2025</span>
-                <a href="https://github.com/LinhHuynh2403/Trash-Detector-AI"><svg class="gh-icon" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
-              </div>
-            </div>
-            <p>
-              A computer vision model using transfer learning on ResNet18 to classify six
-              waste categories from images. Applied normalization and augmentation
-              preprocessing, tuned hyperparameters, and evaluated with confusion matrices
-              and loss/accuracy curves on the TrashNet dataset.
-            </p>
-            <div class="impact">93.42% test accuracy on TrashNet across six waste categories.</div>
-            <div class="tags">
-              <span class="tag">PyTorch</span><span class="tag">ResNet18</span><span class="tag">Transfer
-                learning</span><span class="tag">Python</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" data-skills="Swift,SwiftUI,Firebase">
-          <span class="project-index">06</span>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>SHIPSmart &mdash; AI healthcare assistant</h3>
-              <div class="links">
-                <span class="when">April 2025 &middot; HackDavis25</span>
-                <a href="https://github.com/LinhHuynh2403/SHIPSmart"><svg class="gh-icon" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      fill="currentColor" />
-                  </svg>GitHub</a>
-              </div>
-            </div>
-            <p>
-              An AI-powered iOS app that helps UC students estimate UC SHIP insurance costs,
-              identify billing errors, and automate claims processing. Built with SwiftUI
-              and OpenAI, with Firebase authentication, an AI chatbot, and provider-matching
-              features &mdash; led deployment at HackDavis and resolved API integration bugs under
-              hackathon pressure.
-            </p>
-            <div class="impact">Shipped a working AI healthcare assistant at HackDavis.</div>
-            <div class="tags">
-              <span class="tag">SwiftUI</span><span class="tag">OpenAI</span><span class="tag">Firebase</span><span
-                class="tag">iOS</span>
             </div>
           </div>
         </article>
 
       </div>
+
+      <details class="more-projects">
+        <summary class="more-projects-toggle">
+          <span class="label-closed">View more projects</span>
+          <span class="label-open">Hide more projects</span>
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="more-list">
+
+          <article class="project project-compact" data-skills="TypeScript/JS,React,Tailwind CSS">
+            <span class="project-index">03</span>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Fixity &mdash; maintenance dashboard</h3>
+                <div class="links">
+                  <span class="when">February 2026 &middot; SacHackVII</span>
+                  <a href="https://github.com/LinhHuynh2403/SacHack26-"><svg class="gh-icon" viewBox="0 0 24 24"
+                      aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-compact" data-skills="Python,PyTorch,TensorFlow,Streamlit,Computer vision">
+            <span class="project-index">04</span>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>MRI Alzheimer&rsquo;s Detection</h3>
+                <div class="links">
+                  <span class="when">October &ndash; November 2025</span>
+                  <a href="https://github.com/LinhHuynh2403/ResNet50-LogisticRegression-Dementia-Classification"><svg
+                      class="gh-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-compact" data-skills="Python,PyTorch,Computer vision">
+            <span class="project-index">05</span>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Trash Sorting AI</h3>
+                <div class="links">
+                  <span class="when">October &ndash; November 2025</span>
+                  <a href="https://github.com/LinhHuynh2403/Trash-Detector-AI"><svg class="gh-icon"
+                      viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-compact" data-skills="Swift,SwiftUI,Firebase">
+            <span class="project-index">06</span>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>SHIPSmart &mdash; AI healthcare assistant</h3>
+                <div class="links">
+                  <span class="when">April 2025 &middot; HackDavis25</span>
+                  <a href="https://github.com/LinhHuynh2403/SHIPSmart"><svg class="gh-icon" viewBox="0 0 24 24"
+                      aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor" />
+                    </svg>GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </details>
     </div>
   </section>
 
@@ -352,16 +338,20 @@
                 alt="Helix International logo" class="org-logo"></div>
           </div>
           <div>
-            <h3>AI Intern &middot; <span class="org">Helix International</span></h3>
-            <ul>
-              <li>Created a system for testing 5+ AI models, boosting the accuracy of AI-generated answers and
-                database queries by 15%.</li>
-              <li>Improved AI processing speeds by 30% by identifying and fixing bottlenecks in the data handling
-                process.</li>
-              <li>Wrote clear technical guides for internal teams on how to connect and use our AI tools.</li>
-              <li>Automated the testing process for AI models, making it faster and more consistent to verify
-                performance across updates.</li>
-            </ul>
+            <h3>AI Engineering Intern &middot; <span class="org">Helix International (acquired by IBM)</span></h3>
+            <p>
+              I worked on an internal tool that lets customers query their own data in plain
+              English instead of filling out forms or requesting manual exports. Since the
+              language models needed more compute than my laptop could handle, I set up vLLM
+              on a GPU desktop and ran it remotely to test open-source models like Qwen,
+              Llama, and Gemma. Most of my time went into building the evaluation set &mdash;
+              I wrote 70+ realistic user questions in YAML with hand-written expected SQL
+              answers, then ran each model against them, tuning prompts, temperature, and
+              context window to cut down hallucinations until we reached about 90% accuracy.
+              I also built a simple frontend near the end to help the team sanity-check the
+              frontend&ndash;backend&ndash;API connection, and documented the testing and
+              prompt-engineering process for the team.
+            </p>
           </div>
         </div>
         <div class="xp-item">
@@ -457,7 +447,7 @@
             });
           });
           clearBtn.classList.toggle('show', !!name);
-          note.textContent = name ? hits + ' of ' + total + ' projects use ' + name
+          if (note) note.textContent = name ? hits + ' of ' + total + ' projects use ' + name
             : total + ' projects';
           if (name) {
             document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
