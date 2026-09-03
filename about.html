@@ -20,6 +20,7 @@
             <a href="index.html">Home</a>
             <a href="about.html" style="color: var(--accent);">About</a>
             <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
 
@@ -156,6 +157,7 @@
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-copy">
                     &copy; 2026 Linh Huynh. All rights reserved.
@@ -163,15 +165,10 @@
             </div>
         </footer>
     </div>
-    <!-- Cursor Glow -->
+    <!-- Interactive Background -->
+    <canvas class="bg-constellation"></canvas>
     <div class="cursor-glow"></div>
 
-    <script>
-        const glow = document.querySelector('.cursor-glow');
-        window.addEventListener('mousemove', (e) => {
-            glow.style.left = `${e.clientX}px`;
-            glow.style.top = `${e.clientY}px`;
-        });
-    </script>
+    <script src="bg-effect.js"></script>
 </body>
 </html>

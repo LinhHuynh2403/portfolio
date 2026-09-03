@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Linh Huynh</title>
+    <meta name="description" content="Get in touch with Linh Huynh, software engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Fixed Navigation Pill -->
+    <div class="fixed-nav">
+        <nav class="nav-pill">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" style="color: var(--accent);">Contact</a>
+        </nav>
+    </div>
+
+    <main style="padding-top: 8rem;">
+        <div class="content-wrapper layout-grid" style="grid-template-columns: 1fr; max-width: 800px;">
+            <div class="left-col">
+                <section id="contact">
+                    <header style="margin-bottom: 2.5rem;">
+                        <h1 style="margin-bottom: 1rem;">Get in touch</h1>
+                        <p class="contact-intro">
+                            Have a question, an opportunity, or just want to say hi? Reach me directly below,
+                            or drop a message and I'll get back to you by email.
+                        </p>
+                    </header>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/linh-huynh-hnvl/" class="contact-social-link"
+                            target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:vanlinhtpnt@gmail.com" class="contact-social-link">
+                            <svg viewBox="0 0 24 24"><path d="M2 5.5C2 4.119 3.119 3 4.5 3h15C20.881 3 22 4.119 22 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-15C3.119 21 2 19.881 2 18.5v-13zM4.5 5a.5.5 0 0 0-.5.5v.778l7.556 5.667a.75.75 0 0 0 .888 0L20 6.278V5.5a.5.5 0 0 0-.5-.5h-15zM20 7.844l-7.111 5.333a2.25 2.25 0 0 1-2.667 0L3 7.844V18.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V7.844z"/></svg>
+                            Email
+                        </a>
+                        <a href="https://github.com/LinhHuynh2403" class="contact-social-link" target="_blank"
+                            rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-field">
+                            <label for="cf-email">Your email</label>
+                            <input class="form-input" type="email" id="cf-email" name="email"
+                                placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="cf-message">Message</label>
+                            <textarea class="form-textarea" id="cf-message" name="message"
+                                placeholder="Ask me anything — a question, a role, a project idea..."
+                                required></textarea>
+                        </div>
+                        <p class="form-note">This opens your email app with the message pre-filled, addressed to me.</p>
+                        <button type="submit" class="resume-btn"
+                            style="display: inline-flex; width: auto; align-self: flex-start; padding: 0.75rem 1.5rem; margin-top: 0;">
+                            Send Message
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="content-wrapper">
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2026 Linh Huynh. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Interactive Background -->
+    <canvas class="bg-constellation"></canvas>
+    <div class="cursor-glow"></div>
+
+    <script src="bg-effect.js"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('cf-email').value.trim();
+            const message = document.getElementById('cf-message').value.trim();
+            const subject = `Portfolio message from ${email}`;
+            const body = `${message}\n\n— From: ${email}`;
+            window.location.href = `mailto:vanlinhtpnt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+
+</html>

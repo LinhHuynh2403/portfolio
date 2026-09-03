@@ -474,6 +474,91 @@ p {
     height: 16px;
 }
 
+/* ---------- Contact Page ---------- */
+.contact-intro {
+    max-width: 560px;
+}
+
+.contact-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem 0 3rem;
+}
+
+.contact-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: var(--r-full);
+    border: 1px solid var(--ring);
+    background: var(--card);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-social-link:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--ink);
+}
+
+.contact-social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    color: var(--muted);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 560px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.form-input,
+.form-textarea {
+    font-family: var(--body);
+    font-size: 0.9375rem;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid var(--ring);
+    border-radius: var(--r-md);
+    padding: 0.75rem 1rem;
+}
+
+.form-textarea {
+    min-height: 140px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.form-note {
+    font-size: 0.8125rem;
+    color: var(--faint);
+    margin-top: -0.75rem;
+}
+
 /* ---------- Skills (Chips) ---------- */
 .skills-container {
     margin-bottom: 4rem;
@@ -567,4 +652,13 @@ footer {
     transform: translate(-50%, -50%);
     z-index: -1;
     transition: width 0.3s, height 0.3s;
+}
+
+/* ---------- Interactive Constellation Background ---------- */
+.bg-constellation {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    display: block;
 }
