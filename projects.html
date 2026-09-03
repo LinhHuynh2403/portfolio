@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Linh Huynh</title>
+    <meta name="description" content="Projects by Linh Huynh, software engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Fixed Navigation Pill -->
+    <div class="fixed-nav">
+        <nav class="nav-pill">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" style="color: var(--accent);">Projects</a>
+        </nav>
+    </div>
+
+    <main style="padding-top: 8rem;">
+        <div class="content-wrapper layout-grid" style="grid-template-columns: 1fr; max-width: 800px;">
+            <div class="left-col">
+                <section id="projects">
+                    <header style="margin-bottom: 3rem;">
+                        <h1 style="margin-bottom: 1rem;">Projects</h1>
+                        <p>Things I've made trying to put my dent in the universe. Most are open source.</p>
+                    </header>
+                    <div class="projects-list">
+
+                        <!-- Project: CA Tenant Law RAG -->
+                        <a href="https://ca-tenant-law-rag-bay.vercel.app/" class="group-card" target="_blank">
+                            <div class="project-item">
+                                <div class="project-icon">
+                                    <img src="img/ca-tenant-law.png" alt="CA Tenant Law RAG">
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-title">
+                                        <h3>CA Tenant Law RAG</h3>
+                                        <svg class="project-link-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </div>
+                                    <p class="project-desc">
+                                        An AI-powered Retrieval-Augmented Generation (RAG) system built to answer complex legal questions about California Tenant Law.
+                                    </p>
+                                    <span class="project-link">ca-tenant-law-rag-bay.vercel.app</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Project 1 -->
+                        <a href="https://travel-planner-ai-five-peach.vercel.app/" class="group-card" target="_blank">
+                            <div class="project-item">
+                                <div class="project-icon">
+                                    <img src="img/jourzy-thumb.jpg" alt="JourZy">
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-title">
+                                        <h3>JourZy &mdash; AI travel planner</h3>
+                                        <svg class="project-link-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </div>
+                                    <p class="project-desc">
+                                        An AI travel planner built with Node.js, Gemini, PostgreSQL, and React. Turns a
+                                        rough trip idea into a full day-by-day itinerary without manual research.
+                                    </p>
+                                    <span class="project-link">travel-planner-ai.vercel.app</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Project 2 -->
+                        <a href="https://loginsight-ai-three.vercel.app/" class="group-card" target="_blank">
+                            <div class="project-item">
+                                <div class="project-icon">
+                                    <img src="img/loginsight-thumb.png" alt="LogInsight">
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-title">
+                                        <h3>LogInsight &mdash; AI log observability</h3>
+                                        <svg class="project-link-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </div>
+                                    <p class="project-desc">
+                                        AI-driven observability platform to cut down time spent digging through raw
+                                        logs. Built with FastAPI, React, and LLM Embeddings.
+                                    </p>
+                                    <span class="project-link">loginsight-ai.vercel.app</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div style="margin-top: 3rem; text-align: center;">
+                            <a href="https://github.com/LinhHuynh2403?tab=repositories" class="resume-btn"
+                                style="display: inline-flex; width: auto; padding: 0.75rem 1.5rem; margin-top: 0;">
+                                More projects
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="content-wrapper">
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2026 Linh Huynh. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <script>
+        const glow = document.querySelector('.cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            glow.style.left = `${e.clientX}px`;
+            glow.style.top = `${e.clientY}px`;
+        });
+    </script>
+</body>
+
+</html>
