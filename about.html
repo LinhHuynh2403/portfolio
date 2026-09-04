@@ -84,58 +84,58 @@
                     </h2>
                     
                     <div class="xp-list">
-                        
-                        <a class="xp-item" href="https://www.ucdavis.edu/" target="_blank" rel="noopener">
-                            <div class="xp-logo">
+
+                        <div class="xp-item">
+                            <a class="xp-logo" href="https://www.ucdavis.edu/" target="_blank" rel="noopener" aria-label="Visit UC Davis">
                                 <img src="logo/UCD_logo.png" alt="UC Davis">
-                            </div>
-                            <div class="xp-details">
+                            </a>
+                            <button class="xp-details" type="button" data-xp="ucd-bs">
                                 <div class="xp-header">
                                     <span class="xp-role">B.S. Computer Science</span>
                                     <span class="xp-date">Graduated Jun 2026</span>
                                 </div>
                                 <span class="xp-company">UC Davis</span>
-                            </div>
-                        </a>
+                            </button>
+                        </div>
 
-                        <a class="xp-item" href="https://vialab.tech/" target="_blank" rel="noopener">
-                            <div class="xp-logo">
+                        <div class="xp-item">
+                            <a class="xp-logo" href="https://vialab.tech/" target="_blank" rel="noopener" aria-label="Visit VIA Lab">
                                 <img src="logo/vialab_logo.png" alt="VIA Lab">
-                            </div>
-                            <div class="xp-details">
+                            </a>
+                            <button class="xp-details" type="button" data-xp="via-lab">
                                 <div class="xp-header">
                                     <span class="xp-role">Lab Research Assistant</span>
                                     <span class="xp-date">2026</span>
                                 </div>
                                 <span class="xp-company">VIA Lab, UC Davis</span>
-                            </div>
-                        </a>
+                            </button>
+                        </div>
 
-                        <a class="xp-item" href="https://www.linkedin.com/company/helix-int/" target="_blank" rel="noopener">
-                            <div class="xp-logo">
+                        <div class="xp-item">
+                            <a class="xp-logo" href="https://www.linkedin.com/company/helix-int/" target="_blank" rel="noopener" aria-label="Visit Helix International">
                                 <img src="logo/helix_int_logo.png" alt="Helix International">
-                            </div>
-                            <div class="xp-details">
+                            </a>
+                            <button class="xp-details" type="button" data-xp="helix">
                                 <div class="xp-header">
                                     <span class="xp-role">AI Engineering Intern</span>
                                     <span class="xp-date">2025</span>
                                 </div>
                                 <span class="xp-company">Helix International</span>
-                            </div>
-                        </a>
+                            </button>
+                        </div>
 
-                        <a class="xp-item" href="https://www.ucdavis.edu/" target="_blank" rel="noopener">
-                            <div class="xp-logo">
+                        <div class="xp-item">
+                            <a class="xp-logo" href="https://www.ucdavis.edu/" target="_blank" rel="noopener" aria-label="Visit UC Davis">
                                 <img src="logo/UCD_logo.png" alt="UC Davis">
-                            </div>
-                            <div class="xp-details">
+                            </a>
+                            <button class="xp-details" type="button" data-xp="cs-tutor">
                                 <div class="xp-header">
                                     <span class="xp-role">CS Tutor</span>
                                     <span class="xp-date">2025</span>
                                 </div>
                                 <span class="xp-company">UC Davis</span>
-                            </div>
-                        </a>
+                            </button>
+                        </div>
 
                     </div>
 
@@ -165,10 +165,98 @@
             </div>
         </footer>
     </div>
+    <!-- Work & Education Detail Modal -->
+    <div class="xp-modal-backdrop" id="xpModalBackdrop" hidden>
+        <div class="xp-modal" role="dialog" aria-modal="true" aria-labelledby="xpModalRole">
+            <button class="xp-modal-close" id="xpModalClose" type="button" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="xp-modal-logo" id="xpModalLogo"></div>
+            <div class="xp-modal-header">
+                <h3 id="xpModalRole"></h3>
+                <span class="xp-date" id="xpModalDate"></span>
+            </div>
+            <p class="xp-modal-company" id="xpModalCompany"></p>
+            <p class="xp-modal-body" id="xpModalBody"></p>
+        </div>
+    </div>
+
     <!-- Interactive Background -->
     <canvas class="bg-constellation"></canvas>
     <div class="cursor-glow"></div>
 
     <script src="bg-effect.js"></script>
+    <script>
+        const xpData = {
+            'ucd-bs': {
+                role: 'B.S. Computer Science',
+                date: 'Graduated Jun 2026',
+                company: 'UC Davis',
+                logo: 'logo/UCD_logo.png',
+                body: "Four years at UC Davis studying computer science, with coursework spanning Data Structures & Algorithms, Operating Systems, Computer Architecture, Software Engineering, Machine Learning, Artificial Intelligence Fundamentals, and Computer Vision. This is also where most of the roles and projects on this page actually started — tutoring, lab research, and the side projects that turned into internship experience."
+            },
+            'via-lab': {
+                role: 'Lab Research Assistant',
+                date: '2026',
+                company: 'VIA Lab, UC Davis',
+                logo: 'logo/vialab_logo.png',
+                body: "At UC Davis's Visualization & Intelligence Augmentation lab, I supported PhD students working on LLM research by finding and collecting the datasets their experiments depended on. A lot of the role was reading through research papers and distilling them into clear summaries for literature reviews, then organizing everything — notes, sources, results — into documentation the lab could actually use going forward."
+            },
+            'helix': {
+                role: 'AI Engineering Intern',
+                date: 'Jun 2025 – Sep 2025',
+                company: 'Helix International (acquired by IBM)',
+                logo: 'logo/helix_int_logo.png',
+                body: "Helix International was where I first worked inside a real applied-AI team, reporting model benchmarking results directly to the founding engineers every week. I helped build an internal Gen AI tool that let the company query their own data in plain English using retrieval-augmented generation, and set up vLLM on a GPU desktop so we could run models like Qwen, Llama, and Gemma fully offline. To make sure the tool was actually reliable, I put together a benchmark suite of more than 70 hand-curated SQL test cases, then spent time tuning weaker models with prompt engineering and context adjustments — pushing accuracy from roughly 60–70% up to about 90%."
+            },
+            'cs-tutor': {
+                role: 'CS Tutor',
+                date: 'Jan 2025 – Jun 2025',
+                company: 'UC Davis',
+                logo: 'logo/UCD_logo.png',
+                body: "As a tutor, I worked one-on-one with undergraduate CS students to make Data Structures & Algorithms actually click — walking through the intuition behind a concept rather than just the syntax. A good chunk of each session was live debugging: sitting with a student's real code and reasoning out loud through the logic and syntax errors until they could spot that kind of bug themselves next time."
+            }
+        };
+
+        const xpBackdrop = document.getElementById('xpModalBackdrop');
+        const xpClose = document.getElementById('xpModalClose');
+        const xpModal = xpBackdrop.querySelector('.xp-modal');
+        let xpLastFocused = null;
+
+        function openXpModal(key) {
+            const data = xpData[key];
+            if (!data) return;
+            document.getElementById('xpModalLogo').innerHTML = `<img src="${data.logo}" alt="${data.company}">`;
+            document.getElementById('xpModalRole').textContent = data.role;
+            document.getElementById('xpModalDate').textContent = data.date;
+            document.getElementById('xpModalCompany').textContent = data.company;
+            document.getElementById('xpModalBody').textContent = data.body;
+            xpLastFocused = document.activeElement;
+            xpBackdrop.hidden = false;
+            requestAnimationFrame(() => xpBackdrop.classList.add('open'));
+            document.body.style.overflow = 'hidden';
+            xpClose.focus();
+        }
+
+        function closeXpModal() {
+            xpBackdrop.classList.remove('open');
+            document.body.style.overflow = '';
+            setTimeout(() => { xpBackdrop.hidden = true; }, 150);
+            if (xpLastFocused) xpLastFocused.focus();
+        }
+
+        document.querySelectorAll('.xp-details').forEach((btn) => {
+            btn.addEventListener('click', () => openXpModal(btn.dataset.xp));
+        });
+
+        xpClose.addEventListener('click', closeXpModal);
+        xpBackdrop.addEventListener('click', (e) => {
+            if (e.target === xpBackdrop) closeXpModal();
+        });
+        xpModal.addEventListener('click', (e) => e.stopPropagation());
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !xpBackdrop.hidden) closeXpModal();
+        });
+    </script>
 </body>
 </html>
